@@ -18,6 +18,6 @@ echo "Dumping Mongo database..."
 mongodump --uri "$MONGO_URI" --gzip --archive="$fname"
 
 echo "Uploading to S3..."
-aws s3 cp "$fname" "$AWS_BUCKET_DIR/"
+aws s3 cp --storage-class STANDARD_IA "$fname" "$AWS_BUCKET_DIR/"
 
 echo "Done"
