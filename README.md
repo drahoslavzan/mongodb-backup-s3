@@ -24,7 +24,7 @@ The example below will backup mongo database every day at 1 am. It will create *
 version: '3'
 
 services:
- mongodb:
+  mongodb:
     image: mongo:4.2
     container_name: mongodb
     restart: always
