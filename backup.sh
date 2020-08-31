@@ -10,7 +10,7 @@ MONGO_URI=${MONGO_URI:?"MONGO_URI is required"}
 AWS_BUCKET_DIR=${AWS_BUCKET_DIR:?"AWS_BUCKET_DIR is required"}
 BACKUP_FILE=${BACKUP_FILE:?"BACKUP_FILE is required"}
 
-fname="/backup/$BACKUP_FILE.tar.gz"
+fname="/backup/$BACKUP_FILE.gz"
 
 mkdir -p /backup
 
